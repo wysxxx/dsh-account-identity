@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "title": "账号身份",
+    "description": "在侧边栏账号菜单中显示自定义昵称与头像。"
+  },
+  "label": "账号身份",
+  "displayNameTitle": "显示名称",
+  "displayNameDescription": "显示在侧边栏账号菜单里，替代 DeepSeek 账号名。留空则沿用账号名。",
+  "displayNamePlaceholder": "留空则使用账号名",
+  "avatarTitle": "头像",
+  "avatarDescription": "选择图片后拖动、缩放选区，预览并确认后保存。",
+  "avatarChoose": "选择图片",
+  "avatarRemove": "移除",
+  "avatarNone": "正在使用账号头像",
+  "avatarCurrent": "自定义头像",
+  "avatarInvalid": "该文件无法作为图片读取。",
+  "avatarTooLarge": "图片过大（上限 8 MiB）。",
+  "saveFailed": "保存失败，请重试。",
+  "reset": "恢复账号名称与头像"
+}

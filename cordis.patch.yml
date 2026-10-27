@@ -1,0 +1,5 @@
+# Account identity: inserts its dsh.client row into the web roster.
+- insert:
+    - id: account-identity
+      name: 'dsh-account-identity'
+      config: {}

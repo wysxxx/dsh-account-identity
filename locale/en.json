@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "title": "Account Identity",
+    "description": "Show a custom display name and avatar in the sidebar account menu."
+  },
+  "label": "Account identity",
+  "displayNameTitle": "Display name",
+  "displayNameDescription": "Shown in the sidebar account menu instead of your DeepSeek account name. Leave empty to keep the account name.",
+  "displayNamePlaceholder": "Leave empty to use your account name",
+  "avatarTitle": "Avatar",
+  "avatarDescription": "Choose an image, pan and zoom the crop, then confirm to save.",
+  "avatarChoose": "Choose image",
+  "avatarRemove": "Remove",
+  "avatarNone": "Using the account picture",
+  "avatarCurrent": "Custom picture",
+  "avatarInvalid": "That file could not be read as an image.",
+  "avatarTooLarge": "Image too large (8 MiB maximum).",
+  "saveFailed": "Could not save. Try again.",
+  "reset": "Use account name and picture"
+}
