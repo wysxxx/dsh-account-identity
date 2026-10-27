@@ -37,10 +37,12 @@
 | 界面 | 支持方式与边界 |
 | --- | --- |
 | 原生 Harness | 使用公共账号服务、设置插槽和颜色变量。 |
-| Claude Style | 限定于本插件账号行的主题适配，保留该主题注入的费用卡片。 |
+| Claude Style | 限定于本插件账号行的主题适配；展开侧栏时显示完整费用卡片，收起侧栏时保留原费用组件的紧凑图标视图。 |
 | 其他主题 | 公共插槽与颜色变量可复用；若主题替换账号入口、覆写名称或依赖特定 DOM，需要另外验证，尚未宣称兼容。 |
 
 费用卡片由你安装的费用插件与主题提供；本插件不计算费用，也不读取费用服务的凭据。
+
+**收起侧栏时的已知限制：**费用组件此时不生成今日用量、余额等金额文字；Claude Style 将这个紧凑视图复制进账号菜单，因此菜单中也没有完整金额文字。展开侧栏后可查看完整卡片。完整的窄侧栏菜单呈现需要费用插件或主题增加渲染支持。
 
 插件启用且至少设置了一个自定义字段时，会提供自己的账号入口、设置入口和退出登录确认。**官方赠金通知栈与意见反馈入口尚未覆盖**。没有自定义内容、暂停自定义显示或未登录官方账号时，账号入口由 Harness 提供。
 
@@ -69,7 +71,7 @@ Customize the name and avatar displayed in the DeepSeek Harness sidebar without 
 
 Install this repository or a release `.tgz` through Harness plugin management, restart when prompted, then open **Settings → Account identity**. Pause the override before disabling or uninstalling the plugin so its temporary Claude Style name can be restored.
 
-Tested with Harness 0.2.1-rc.3 and Claude Style 0.19.5. Other themes are unverified. Cost cards remain supplied by their original plugin and theme. The replacement account menu does not yet include the official bonus-notification stack or feedback entry. See the compatibility and data notes above for details.
+Tested with Harness 0.2.1-rc.3 and Claude Style 0.19.5. Other themes are unverified. Cost cards remain supplied by their original plugin and theme. With a collapsed sidebar, Claude Style mirrors the compact icon view, which omits amount text; expand the sidebar for the full card. The replacement account menu does not yet include the official bonus-notification stack or feedback entry. See the compatibility and data notes above for details.
 
 ## License
 
